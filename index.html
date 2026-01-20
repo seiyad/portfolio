@@ -3,81 +3,113 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Syed Sulaiman | Classic Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Sulaiman | Dev Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="page">
-        <div class="frame">
-            <div class="header">
-                <img src="./assest/Sulaiman (2.1).jpg" class="profile-img" alt="Profile">
-                <div class="header-text">
-                    <h1>Syed Sulaiman S</h1>
-                    <h3>Web Developer</h3>
-                    <p>Dindigul</p>
-                </div>
-            </div>
+    <!-- BACKGROUND ANIMATION -->
+    <div class="bg-animation"></div>
 
-            <hr>
-
-            <section>
-                <h2>About Me</h2>
-                <p>
-                    Hi! I am Syed Sulaiman, and a positive and confident coder.
-                    I like to create new ideas and learn new in the world and
-                    my hobby is book reading. My family members dad and mom
-                    and three sisters. I am a liked in solving the bugs and problems.
-                </p>
-            </section>
-
-            <hr class="center-line">
-
-            <section>
-                <h2>Skills</h2>
-
-                <div class="skills-box">
-                    <div class="box">
-                        <h3>Learning</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Git Hub</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                        </ul>
-                    </div>
-
-                    <div class="box">
-                        <h3>Strengths</h3>
-                        <ul>
-                            <li>Easy to learning</li>
-                            <li>Solving error in code</li>
-                            <li>Create new ideas</li>
-                            <li>Short time learner</li>
-                            <li>Quick action the problems</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-
-            <section>
-                <h2>Project</h2>
-                <a href="http://127.0.0.1:5500/static-website/index.html" class="project-link">Static Website</a>
-            </section>
-
-            <section>
-                <h2>Contect me:</h2>
-               <h4>Mobile number: 88259 13686</h4>
-               <h4>G-mail: <a href="https://mail.google.com/mail/?tab=rm&ogbl">https://mail.google.com/mail/?tab=rm&ogbl</a></h4>
-               <h4>Linked In: <a href="https://www.linkedin.com/feed/">https://www.linkedin.com/feed/</a></h4>
-            </section>
-
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">SYED<span>.DEV</span></div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="contact-btn">Rsume</a>
         </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header>
+        <div class="backgroundimage"><img src="../assest/image.png" height="700px"></div>
+        <div class="hero-content">
+            <h4 class="typing">Hello, I am</h4>
+            <h1 class="glitch" data-text="SYED SULAIMAN S">SYED SULAIMAN S</h1>
+
+            <p>Web Developer & <span class="highlight">Problem Solver</span> based in Dindigul.</p>
+
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Let's Talk</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="container fade-in">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-card float-card">
+            <p>I am a positive and confident coder who loves turning challenges into simple and beautiful solutions.
+                I enjoy <strong>bug fixing</strong>, <strong>logic building</strong>, and <strong>creating modern
+                    UI</strong>.
+            </p>
+
+            <div class="personal-info">
+                <span><strong>Hobby:</strong> Book Reading</span>
+                <span><strong>Location:</strong> Dindigul, Tamil Nadu</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container fade-in">
+        <h2 class="section-title">Tech Stack</h2>
+        <label for="html" class="tech-box">HTML</label>
+<input type="checkbox" id="html">
+<div class="progress-box html-bar">
+    <div class="bar html"></div>
+    <span>90% Learning</span>
+</div>
+
+<label for="css" class="tech-box">CSS</label>
+<input type="checkbox" id="css">
+<div class="progress-box css-bar">
+    <div class="bar css"></div>
+    <span>80% Learning</span>
+</div>
+
+<label for="js" class="tech-box">JavaScript</label>
+<input type="checkbox" id="js">
+<div class="progress-box js-bar">
+    <div class="bar js"></div>
+    <span>60% Learning</span>
+</div>
+
+    </section>
+    <!-- PROJECTS -->
+<section id="projects" class="container fade-in">
+    <h2 class="section-title">Featured Projects</h2>
+    <div id="projectimg">
+    <div class="box"><div class="content"><img src="../assest/projectone.png"height="400px" width="600px"><p class="font">Tuch To Open</p></div></div>
+    <div class="box"><div class="content"><img src="../assest/projecttwo.png" height="400px" width="600px"><p class="font">Tuch To Open</p></div></div>
+    </div>
+        <h3>Static Website Architecture</h3>
+        <p>SEO-optimized static website with clean UI, animations, and high performance.</p>
+
+        <div class="tag">HTML</div>
+        <div class="tag">CSS</div>
+        <div class="tag">JavaScript</div>
     </div>
 
-</body>
+</section>
+    <!-- CONTACT -->
+    <footer id="contact">
+        <h2 class="section-title">Get In Touch</h2>
 
+        <div class="contact-box">
+            <a href="#" class="contact-icon"><img src="../assest/github (1).png" alt="GitHub"></a>
+            <a href="#" class="contact-icon"><img src="../assest/slack.png" alt="Slack"></a>
+            <a href="#" class="contact-icon"><img src="../assest/linkedin.png" alt="LinkedIn"></a>
+            <a href="#" class="contact-icon"><img src="../assest/communication.png" alt="Mail"></a>
+            <a href="#" class="contact-icon"><img src="../assest/social - Copy.png" alt="Social"></a>
+        </div>
+    </footer>
+
+</body>
 </html>
